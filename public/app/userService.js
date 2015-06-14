@@ -23,6 +23,7 @@ myApp.factory('UserService', function($http, $location) {
         authUser : function(email, password) {
             var apiAuthUser = "https://api.idolondemand.com/1/api/sync/authenticate/v1";
             $http.post(apiAuthUser, {
+                'mechanism': 'SIMPLE',
                 'store': 'users',
                 'user': email,
                 'password': password,

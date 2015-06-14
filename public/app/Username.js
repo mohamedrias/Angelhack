@@ -1,3 +1,0 @@
-myApp.controller('Username', function(){
-
-});
