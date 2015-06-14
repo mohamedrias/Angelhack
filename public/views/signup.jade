@@ -26,8 +26,8 @@
                             | &nbsp;
                             a.btn.btn-default(href="/") Cancel
 
-div#confirmModal.modal.fade(role='dialog')
+div#confirmModal.modal.fade(role='dialog' ng-show='showmodal')
     div.modal-dialog
         div.modal-content
             h3 You're registered!
-            a.btn.btn-success(href='/signin') Go to login
+            a.btn.btn-success(href='/signin' ng-click='hidemodal()') Go to login

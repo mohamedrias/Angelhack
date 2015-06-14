@@ -5,7 +5,10 @@ myApp.controller("signupCtrl", function($scope, notifier, $location, UserService
         $scope.showmodal = true;
     };
     $scope.modal = function() {
-        $scope.showmodal = true
+        $scope.showmodal = true;
+    };
+    $scope.hidemodal = function() {
+        $scope.showmodal = false;
     }
 
 
