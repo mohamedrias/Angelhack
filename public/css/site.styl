@@ -1,46 +1,62 @@
 body
+  padding-top 70px
   font-family 'Open Sans'
 
-div.navbar.navbar-default.navbar-fixed-top
-  div.container
-    margin-right 30px
+///////////*++NAV BAR ++*/
+.navbar
   background-color #00939d
-body
-  padding-top 70px
+  .container
+    position relative
+    margin 0 auto
+  a
+    color #000000 !important
+    font-size 1.2em
+    font-weight bold
+    margin-right
 
 .navbarlogo
-  width 250px
-  padding-right 40px
+  width 200px
+  pull right
   margin-top -15px
+  padding 0
+
+.userpic
+  position absolute
+  background-color #000000
+  width 150px
+  height 150px
+  /*margin-left 70px*/
+  margin-top 33px
 
 .username
-  position fixed
-  margin-left 260px
+  position absolute
+  margin-left 200px
   margin-top 25px
   font-size 3em
   font-weight 600
   color #fef7ca
   text-shadow black -0.1em 0.1em 0.2em
 
-ul li a
-  color #000000 !important
-  font-size 1.5em
-  font-weight bold
-  margin-right
 
-.userpic
-  position fixed
-  background-color #000000
-  width 150px
-  height 150px
-  margin-left 70px
-  margin-top 33px
-
+////////////////////*MINE*/
 .stuff
-  margin-top 120px
+  position relative
+  margin-top 150px
+  .col-xs-10
+    padding 0
+  button
+    margin-bottom 10px
 
 .leftbar
-  margin-top 100px
+  margin-top 80px
+  h3
+    margin 0
+  ul
+    list-style-type none
+    margin-top 10px
+    padding 0
+  input
+    margin-right 5px
 
 .searchbar
   width 60%
@@ -54,33 +70,47 @@ div.togglebuttons button
 .griditem
   background no-repeat center center
   background-size cover
-  width 204.25px
-  height 204.25px
+  height 200px
   z-index -1
+
 .wrapper
   background-color #006600
   position relative
   z-index 2
-  width 204.25px
-  height 204.25px
+  width 100%
+  height 100%
   opacity .2
+
 .redwrap
   background-color #b00900
   position relative
   z-index 2
-  width 204.25px
-  height 204.25px
+  width 100%
+  height 100%
   opacity .2
 
 .overlay
   z-index 3
   width 204.25px
   height 204.25px
+  z-index 0
+  width 100%
+  height 100%
   p
-    color: #fef7ca
+    color: #FFFFFF
     display inline
     position relative
-    top -204.25px
+    z-index 3
+    margin-left 10px
+  h2
+    position absolute
+    top -10px
+    left 10px
+    color #FFFFFF
+    display inline
+    z-index 3
+  h3
+    color #FFFFFF
 
 
 .nopad
@@ -90,3 +120,19 @@ div.togglebuttons button
   margin-top 100px
   padding-left 100px
 
+.details
+  position absolute
+  bottom 0px
+  z-index 3
+
+.notihalf
+  padding 30px
+  position absolute
+  top 0
+  right 0
+  background-color white
+  width 50%
+  height 100%
+  text-align center
+  button
+    margin 10px
