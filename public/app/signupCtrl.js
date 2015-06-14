@@ -1,15 +1,7 @@
 myApp.controller("signupCtrl", function($scope, notifier, $location, UserService){
-    $scope.showmodal = false;
     $scope.signup = function(){
         UserService.createUser($scope.email,$scope.password);
-        $scope.showmodal = true;
+        UserService.authUser($scope.email,$scope.password);
     };
-    $scope.modal = function() {
-        $scope.showmodal = true;
-    };
-    $scope.hidemodal = function() {
-        $scope.showmodal = false;
-    }
-
 
 });

@@ -1,8 +1,8 @@
-.container
+.container(style='margin-top: 20px; width: 800px;')
     .well
         form.form-horizontal(name="signupForm")
             fieldset
-                legend New User Information
+                legend(style='text-align: center;') Create an account
                 .form-group
                     label.col-md-2.control-label(for="email") Email
                     .col-md-10
@@ -25,9 +25,3 @@
                             button.btn.btn-primary(ng-click="signup()" data-toggle='modal' data-target='#confirmModal') Submit
                             | &nbsp;
                             a.btn.btn-default(href="/") Cancel
-
-div#confirmModal.modal.fade(role='dialog' ng-show='showmodal')
-    div.modal-dialog
-        div.modal-content
-            h3 You're registered!
-            a.btn.btn-success(href='/signin' ng-click='hidemodal()') Go to login
