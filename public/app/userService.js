@@ -36,7 +36,6 @@ myApp.factory('UserService', function($http, $location) {
                 }).
                 error(function(message) {
                     console.log(message);
-                    $location.path('/partials/signup');
                     return messsage;
                 });
         },

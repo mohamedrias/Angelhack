@@ -1,4 +1,4 @@
-myApp.controller('signinCtrl', function($scope, $location, UserService){
+myApp.controller('signinCtrl', function($scope, UserService){
     $scope.username = 'Angel Hacker';
     $scope.loggedin = false;
     $scope.signin = function() {
@@ -7,7 +7,7 @@ myApp.controller('signinCtrl', function($scope, $location, UserService){
     };
     $scope.signup = function() {
         UserService.createUser($scope.email,$scope.password);
-        $scope.loggin = true;
+        $scope.loggedin = true;
 
     };
 });
