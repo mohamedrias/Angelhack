@@ -1,6 +1,29 @@
 .container.stuff
-    .col-xs-2.leftbar selector stuff
-    .col-xs-9
+    .col-xs-2.leftbar
+        h3 Items
+        ul
+            li
+                input(type='checkbox' value='')
+                span All Items
+            li
+                input(type='checkbox' value='late')
+                span Past Due Items
+            li
+                input(type='checkbox' value='returned')
+                span Returned Items
+            br
+        h3 Categories
+        ul
+            li
+                input(type='checkbox' value='electronics')
+                span Electronics
+            li
+                input(type='checkbox' value='tools')
+                span Tools
+            li
+                input(type='checkbox' value='games')
+                span Video Games
+    .col-xs-10
         .row
             .col-xs-4
             .col-xs-4.togglebuttons
@@ -15,9 +38,9 @@
                     div.griditem(ng-style="{'background-image':'url(http://cdn.blessthisstuff.com/imagens/stuff/kriega-r20-backpack-2.jpg)'}")
                         div.overlay
                             div(ng-class="{ 'redwrap' : item.notifications, 'wrapper' : !item.notifications}")
-                            p {{item.item}}
-                            div
-                                p {{item.weeksout}}
+                            h2 {{item.item}}
+                            div.details
+                                h3 {{item.weeksout}}
                                 p(ng-show="item.notifications") {{item.notifications}} notifications
                                 img.img-circl(ng-src="item.borrowpic")
 
