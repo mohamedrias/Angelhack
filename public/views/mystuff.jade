@@ -38,10 +38,21 @@
                     div.griditem(ng-style="{'background-image':'url(http://cdn.blessthisstuff.com/imagens/stuff/kriega-r20-backpack-2.jpg)'}")
                         div.overlay
                             div(ng-class="{ 'redwrap' : item.notifications, 'wrapper' : !item.notifications}")
-                            h2 {{item.item}}
-                            div.details
-                                h3 {{item.weeksout}}
-                                p(ng-show="item.notifications") {{item.notifications}} notifications
-                                img.img-circl(ng-src="item.borrowpic")
+                            a(data-toggle='modal', data-target='#notimodal')
+                                h2 {{item.item}}
+                                div.details
+                                    h3 {{item.weeksout}}
+                                    p(ng-show="item.notifications") {{item.notifications}} notifications
+                                    img.img-circl(ng-src="item.borrowpic")
 
+
+    #notimodal.modal.fade
+        .modal-dialog
+            img(src='https://slack-files.com/files-tmb/T06AEQG2D-F06AVHL4W-cf25aa8c42/11354727_1096377437057397_749293979_n_360.png')
+            div.notihalf
+                h3 Sleeping Bag
+                h4 Tommy Beard
+                p Borrowed 4/23/2015
+                button.btn.btn-danger(type='button', data-dismiss='modal') Notify
+                button.btn.btn-success(type='button', data-dismiss='modal') Returned
 

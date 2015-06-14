@@ -127,3 +127,16 @@ div.togglebuttons button {
   bottom: 0px;
   z-index: 3;
 }
+.notihalf {
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.notihalf button {
+  margin: 10px;
+}
