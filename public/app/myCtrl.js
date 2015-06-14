@@ -10,7 +10,8 @@ myApp.controller('myCtrl', function($scope){
             description: "Great Sleeping bag",
             notes: "gave to johnny for camping trip",
             img: "http://cdn.blessthisstuff.com/imagens/stuff/kriega-r20-backpack-2.jpg",
-            treve: ""
+            treve: "",
+            weeksout: "4 weeks"
 
         },
         {
