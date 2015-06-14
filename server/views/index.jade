@@ -1,25 +1,26 @@
 extends ../includes/layout
 
 block main-content
-    .navbar.navbar-default.navbar-fixed-top
-        .navbar-collapse.collapse
-            .row
-                .container
-                    .col-xs-4.pull-right
-                        ul.nav.navbar-nav.hover-active.navbar-right
-                            li
-                                a(href="/") Dashboard
-                            li
-                                a(href="/") History
-                            li
-                                a(href="/signup") Signup
-                            li
-                                a(href="/signin") Signin
-            .row
-                img.userpic
-                span.username(ng-controller='Username') {{username}}
-                .col-xs-3.pull-right
-                    img.navbarlogo(src="partials/../images/robodog.png")
+    div.container
+        .navbar.navbar-default.navbar-fixed-top
+            .navbar-collapse.collapse
+                .row
+                    .container
+                        .col-xs-4.pull-right
+                            ul.nav.navbar-nav.hover-active.navbar-right
+                                li
+                                    a(href="/") Dashboard
+                                li
+                                    a(href="/") History
+                                li
+                                    a(href="/signup") Signup
+                                li
+                                    a(href="/signin") Signin
+                .row
+                    img.userpic
+                    span.username(ng-controller='Username') {{username}}
+                    .col-xs-3.pull-right
+                        img.navbarlogo(src="partials/../images/robodog.png")
 
     section.content
         div(ng-view)

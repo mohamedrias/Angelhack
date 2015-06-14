@@ -1,10 +1,10 @@
 body {
   font-family: 'Open Sans';
 }
-div.navbar.navbar-default.navbar-fixed-top {
+div.navbar {
   background-color: #00939d;
 }
-div.navbar.navbar-default.navbar-fixed-top div.container {
+div.navbar div.container {
   margin-right: 30px;
 }
 body {
