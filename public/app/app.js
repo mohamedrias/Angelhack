@@ -10,6 +10,7 @@ myApp.config(function($routeProvider, $locationProvider) {
         .when('/mine', {templateUrl: '/partials/mystuff', controller: 'myCtrl'})
         .when('/theirs', {templateUrl: '/partials/theirstuff', controller: 'theirCtrl'})
         .when('/signup', {templateUrl: '/partials/signup', controller: 'signupCtrl'})
+        .when('/signin', {templateUrl: '/partials/signin', controller: 'signinCtrl'})
 
 
 });
